@@ -2,18 +2,18 @@
 
 ## => This space showcases the skills and knowledge I've gained while learning through the institutions like Google,Kaggle ,DeepLearning etc. Each project here is 
 
-carefully designed to reflect real-world ML applications, with a focus on both technical accuracy and practical understanding.
+## carefully designed to reflect real-world ML applications, with a focus on both technical accuracy and practical understanding.
 
 
 ## => I've made sure not just to build models, but to understand why and how they work—covering data preprocessing, exploratory data analysis, model 
 
-selection, training, evaluation, and interpretability. The goal is to present clean, insightful projects that show a complete ML pipeline—from raw 
+## selection, training, evaluation, and interpretability. The goal is to present clean, insightful projects that show a complete ML pipeline—from raw 
 
-data to predictions—using industry-standard tools and best practices.
+## data to predictions—using industry-standard tools and best practices.
 
 
 ## => This repository reflects my hands-on learning journey with Python, scikit-learn, Pandas, NumPy, and visualization libraries, all backed by solid 
 
-theoretical understanding from the courses. All code and documentation are written with clarity and scalability in mind, as if preparing 
+## theoretical understanding from the courses. All code and documentation are written with clarity and scalability in mind, as if preparing 
 
-for a real internship or production-ready environment.
+## for a real internship or production-ready environment.

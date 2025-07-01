@@ -68,14 +68,14 @@ fail_risk = xgb.predict(input_data)[0] == 0  # if predicted 0, it's risky
 # Output
 st.subheader(f"Prediction for: **{startup_name}**")
 st.write(f"**Success Probability:** {success_prob:.2%}")
-st.write("**Failure Risk (XGBoost):**", "!!! High Risk" if fail_risk else "✅ Low Risk")
+st.write("**Failure Risk (XGBoost):**", "!!! High Risk" if fail_risk else " Low Risk")
 
 if success_prob > 0.8 and not fail_risk:
-    st.success("👍 Recommended for Further Investment")
+    st.success(" Recommended for Further Investment")
 elif success_prob < 0.5 or fail_risk:
-    st.error("👎 Not Recommended – High Risk Detected")
+    st.error(" Not Recommended – High Risk Detected")
 else:
-    st.warning("😐 Caution – Consider Deeper Validation")
+    st.warning(" Caution – Consider Deeper Validation")
 
 with st.expander("Show Model Input Features"):
     st.dataframe(input_data)
@@ -85,11 +85,11 @@ show_features=st.radio("🔍 Want to know which features influenced the predicti
 if show_features == "Yes":
 
     if success_prob > 0.5 and not fail_risk:          # success path  => Random Forest
-        st.subheader("🌟 Top Features Driving Success (Random Forest)")
+        st.subheader(" Top Features Driving Success (Random Forest)")
         importances = pd.Series(rf.feature_importances_, index=column_order)
 
     else:                                             # failure-risk path => XGBoost
-        st.subheader("⚠️ Features Suggesting Failure Risk (XGBoost)")
+        st.subheader(" Features Suggesting Failure Risk (XGBoost)")
         importances = pd.Series(xgb.feature_importances_, index=column_order)
 
     # --- build horizontal bar plot inline (no helper function) ---
